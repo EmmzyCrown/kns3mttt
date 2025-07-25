@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CBT App - With Feedback</title>
+  <link rel="stylesheet" href="https://cdn.tailwindcss.com" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-xl bg-white rounded-xl shadow-lg p-6 space-y-4">
+    <h1 class="text-2xl font-bold text-center">CBT Knowledge Test</h1>
+
+    <div id="quiz-container">
+      <div id="question" class="text-lg font-medium mb-4"></div>
+      <div id="options" class="space-y-2"></div>
+      <div class="flex justify-between mt-6">
+        <button id="prevBtn" class="bg-gray-300 px-4 py-2 rounded">Previous</button>
+        <button id="nextBtn" class="bg-blue-500 text-white px-4 py-2 rounded">Next</button>
+      </div>
+    </div>
+
+    <!-- ✅ Result container with score paragraph for feedback -->
+    <div id="result-container" class="hidden text-left space-y-4">
+      <h2 class="text-xl font-semibold text-center">Test Complete!</h2>
+      <p id="score" class="text-lg"></p> <!-- ✅ This line is now included -->
+      <div class="text-center">
+        <button id="restartBtn" class="mt-4 bg-green-500 text-white px-4 py-2 rounded">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
